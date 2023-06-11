@@ -1,0 +1,46 @@
+$yellow: #f9c000;
+$yellow-hover: #f9bf00c7;
+$gray: #f0f0f0;
+@mixin zona($fz, $fw) {
+	font-family: "Zona Pro", sans-serif !important;
+	font-size: $fz !important;
+	font-weight: $fw !important;
+}
+
+body,
+html {
+	font-family: "Montserrat", sans-serif !important;
+	line-height: 1.2;
+	font-size: 16px;
+}
+* {
+	color: black !important;
+}
+.container {
+	max-width: 1810px !important;
+	margin: 0px auto !important;
+}
+.nav {
+	@include zona(23, 500);
+}
+.button-primary {
+	background: $yellow;
+	border: none;
+	padding: 26px 107px 34px 106px;
+	transition: all 0.3s ease 0s;
+	border-radius: 10px;
+	&:hover {
+		background: $yellow-hover;
+	}
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.zona {
+	@include zona(70, 700);
+}
+
+.partners {
+	background: $gray;
+}

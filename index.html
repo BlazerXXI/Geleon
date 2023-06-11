@@ -21,11 +21,18 @@
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"
 		></script>
+		<link href="https://fonts.cdnfonts.com/css/zona-pro" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+			rel="stylesheet"
+		/>
 		<script src="./js/index.js"></script>
 	</head>
 	<body>
-		<header class="header container">
-			<div>
+		<header
+			class="header container pt-3 pb-3 ps-4 d-flex align-items-center justify-content-between"
+		>
+			<div class="">
 				<a href="./"
 					><img
 						src="./images/header/logo.svg"
@@ -34,7 +41,7 @@
 						height="108"
 				/></a>
 			</div>
-			<nav>
+			<nav class="fw-medium nav">
 				<a href="">Преимущества</a>
 				<a href="">Товары</a>
 				<a href="">Позвоните нам</a>
@@ -42,9 +49,44 @@
 				<a href="">Отзывы</a>
 				<a href="">Гарантии</a>
 			</nav>
-			<div>
+			<div class="">
 				<a href="tel:0991112233">+38(099) 111 22 33</a>
 			</div>
 		</header>
+		<main class="main container">
+			<section class="hero">
+				<div>
+					<h2 class="zona">РАСХОДНЫЕ МАТЕРИАЛЫ ДЛЯ ШИНОМОНТАЖА</h2>
+					<p class="fw-medium fs-2">
+						Подберем от латки до комплекта "на первый раз" за
+						<span class="fw-bold">1 звонок!</span>
+					</p>
+					<button class="fw-bold fs-2 button-primary">Заказать звонок</button>
+				</div>
+			</section>
+			<section class="partners container">
+				<ul class="row list-unstyled">
+					<li class="col">
+						<img src="./images/partners/rossvik.png" alt="rossvik" />
+					</li>
+					<li class="col">
+						<img src="./images/partners/tech.png" alt="tech" />
+					</li>
+					<li class="col">
+						<img src="./images/partners/tip-top.png" alt="tip-top" />
+					</li>
+					<li class="col">
+						<img src="./images/partners/bestpatch.png" alt="bestpatch" />
+					</li>
+					<li class="col">
+						<img src="./images/partners/patch-rubber.png" alt="patch-rubber" />
+					</li>
+					<li class="col">
+						<img src="./images/partners/maruni.png" alt="maruni" />
+					</li>
+				</ul>
+			</section>
+			<section class="advantages"></section>
+		</main>
 	</body>
 </html>
