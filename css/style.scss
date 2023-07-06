@@ -12,6 +12,9 @@ html {
 	font-family: "Montserrat", sans-serif !important;
 	line-height: 1.2;
 	font-size: 16px;
+	* {
+		list-style-type: none;
+	}
 }
 a {
 	text-decoration: none !important;
@@ -80,4 +83,67 @@ a {
 
 .partners {
 	background: $gray;
+}
+
+.header__menu {
+	.menu__icon {
+		position: relative;
+		display: flex;
+		cursor: pointer;
+		justify-content: center;
+		align-items: center;
+		min-width: 43px;
+		min-height: 50px;
+		background: none;
+		border: none;
+		z-index: 2;
+		span {
+			z-index: 2;
+			min-width: inherit;
+			min-height: 7.5px;
+			background-color: #000;
+			position: relative;
+			border-radius: 8px;
+			&::before {
+				content: "";
+				width: 100%;
+				min-height: inherit;
+				background-color: inherit;
+				position: absolute;
+				top: -11.25px;
+				left: 0;
+				border-radius: 8px;
+			}
+			&::after {
+				content: "";
+				width: 100%;
+				min-height: inherit;
+				background-color: inherit;
+				position: absolute;
+				top: 11.25px;
+				left: 0;
+				border-radius: 8px;
+			}
+			.menu-active {
+				transition: all 0.3s ease 0s;
+				span {
+					transition: all 0.3s ease 0s;
+					background-color: transparent;
+				}
+				span:before {
+					transition: all 0.3s ease 0s;
+					transform: rotate(90deg);
+				}
+				span:after {
+					transition: all 0.3s ease 0s;
+					transform: rotate(-90deg);
+				}
+			}
+		}
+	}
+	.menu__body {
+		display: none;
+		box-shadow: 2px 2px 20px 15px #00000040;
+		transition: all 0.3s ease 0s;
+	}
 }

@@ -26,7 +26,6 @@
 			href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
 			rel="stylesheet"
 		/>
-		<script src="./js/index.js"></script>
 	</head>
 	<body>
 		<header
@@ -53,6 +52,35 @@
 			</nav>
 			<div class="fs-4 fw-semibold">
 				<a href="tel:0991112233">+38(099) 111 22 33</a>
+			</div>
+			<div class="header__menu end-0 menu d-block d-lg-none">
+				<button type="button" id="headerMenu" class="menu__icon icon__menu">
+					<span></span>
+				</button>
+				<nav
+					class="menu__body position-absolute bg-white z-1 vh-100 top-0 text-start align-items-center end-0"
+				>
+					<ul class="manu__list d-flex gap-3 flex-column">
+						<li class="menu__item">
+							<a href="" class="text-center pe-4">Преимущества</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="text-center pe-4">Товары</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="text-center pe-4">Позвоните нам</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="text-center pe-4">Схема работы</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="text-center pe-4">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="text-center">Гарантии</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<main class="main container">
@@ -90,5 +118,6 @@
 			</section>
 			<section class="advantages"></section>
 		</main>
+		<script src="./js/index.js"></script>
 	</body>
 </html>
