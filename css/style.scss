@@ -85,11 +85,13 @@ a {
 .hero__container {
 	max-width: 1617px;
 	margin: 0px auto;
-	h1 {
-		font-size: 70px;
-	}
-	p {
-		font-size: 35px;
+	@media (min-width: 768px) {
+		h1 {
+			font-size: 70px;
+		}
+		p {
+			font-size: 35px;
+		}
 	}
 }
 .button-primary {
