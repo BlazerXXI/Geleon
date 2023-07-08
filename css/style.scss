@@ -197,3 +197,41 @@ a {
 		transform: scale(0.9);
 	}
 }
+// modal styles
+.modal-request {
+	label {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.requestCallButton {
+		color: #000;
+		font-size: 16px;
+		font-weight: 700;
+		padding: 5px 12px;
+		border-radius: 10px;
+		background: #f9c000;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			transition: all 0.3s ease 0s;
+			opacity: 0.8;
+		}
+		&:active {
+			transition: all 0.3s ease 0s;
+			opacity: 1;
+			transform: scale(0.9);
+		}
+	}
+	.close {
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			transition: all 0.3s ease 0s;
+			opacity: 0.8;
+		}
+		&:active {
+			transition: all 0.3s ease 0s;
+			opacity: 1;
+			transform: scale(0.9);
+		}
+	}
+}
