@@ -3,7 +3,6 @@ $yellow-hover: #f9bf00c7;
 $gray: #f0f0f0;
 @mixin zona($fz, $fw) {
 	font-family: "Zona Pro", sans-serif !important;
-	font-size: $fz + px !important;
 	font-weight: $fw !important;
 }
 
@@ -14,6 +13,8 @@ html {
 	font-size: 16px;
 	* {
 		list-style-type: none;
+		margin: 0;
+		padding: 0;
 	}
 }
 a {
@@ -31,8 +32,30 @@ a {
 	max-width: 1810px !important;
 	margin: 0px auto !important;
 }
+.header__logo-block {
+	a {
+		img {
+			@media (min-width: 768px) {
+				width: 132px;
+				height: 108px;
+			}
+		}
+	}
+}
 .nav {
 	@include zona(23, 500);
+	@media (min-width: 768px) {
+		font-size: 23px;
+		font-weight: 500;
+	}
+}
+.number-block {
+	font-size: 1rem;
+	min-width: 140px;
+	@media (min-width: 768px) {
+		font-size: 23px;
+		min-width: 201px;
+	}
 }
 .hero {
 	position: relative;
@@ -62,6 +85,12 @@ a {
 .hero__container {
 	max-width: 1617px;
 	margin: 0px auto;
+	h1 {
+		font-size: 70px;
+	}
+	p {
+		font-size: 35px;
+	}
 }
 .button-primary {
 	background: $yellow;
@@ -80,11 +109,6 @@ a {
 .zona {
 	@include zona(70, 700);
 }
-
-.partners {
-	background: $gray;
-}
-
 .header__menu {
 	.menu__icon {
 		position: relative;
@@ -145,5 +169,29 @@ a {
 		display: none;
 		box-shadow: 2px 2px 20px 15px #00000040;
 		transition: all 0.3s ease 0s;
+	}
+}
+.primary-button {
+	color: #000;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+	padding: 16px 51px 16px 69px;
+	border-radius: 10px;
+	background: #f9c000;
+	transition: all 0.3s ease 0s;
+	@media (min-width: 768px) {
+		font-size: 35px;
+		width: 526px;
+		height: 101px;
+	}
+	&:hover {
+		transition: all 0.3s ease 0s;
+		opacity: 0.8;
+	}
+	&:active {
+		transition: all 0.3s ease 0s;
+		opacity: 1;
+		transform: scale(0.9);
 	}
 }

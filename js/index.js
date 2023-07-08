@@ -1,14 +1,14 @@
-"use strict";
+$(document).ready(function () {
+	const headerMenu = $("#headerMenu");
+	const navListHeader = $(".menu__body");
 
-const headerMenu = document.querySelector("#headerMenu");
-const navListHeader = document.querySelector(".menu__body");
+	headerMenu.on("click", function () {
+		headerMenu.toggleClass("menu-active");
 
-headerMenu.addEventListener("click", () => {
-	headerMenu.classList.toggle("menu-active");
-
-	if (headerMenu.classList.contains("menu-active")) {
-		navListHeader.style.display = "flex";
-	} else {
-		navListHeader.style.display = "none";
-	}
+		if (headerMenu.hasClass("menu-active")) {
+			navListHeader.css("display", "flex");
+		} else {
+			navListHeader.css("display", "none");
+		}
+	});
 });
