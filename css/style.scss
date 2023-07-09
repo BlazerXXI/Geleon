@@ -261,3 +261,24 @@ a {
 		transform: scale(0.9);
 	}
 }
+// partners styles
+.partners {
+	img {
+		cursor: pointer;
+		transition: all 0.3s ease-in-out 0s;
+		&:hover {
+			transition: all 0.3s ease-in-out 0s;
+			filter: brightness(85%);
+			transform: scale(1.1);
+			border-radius: 30px;
+		}
+	}
+	@media (min-width: 768px) {
+		background-color: #f0f0f0;
+	}
+	@media (max-width: 768px) {
+		img {
+			width: 75%;
+		}
+	}
+}
