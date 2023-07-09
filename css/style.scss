@@ -1,8 +1,16 @@
 $yellow: #f9c000;
 $yellow-hover: #f9bf00c7;
 $gray: #f0f0f0;
+
+@font-face {
+	font-family: "Zona Pro";
+	src: url("../fonts/ZonaPro-Regular.woff") format("woff");
+	src: url("../fonts/ZonaPro-Regular.eot") format("eot");
+	src: url("../fonts/ZonaPro-Regular.ttf") format("ttf");
+}
+
 @mixin zona($fz, $fw) {
-	font-family: "Zona Pro", sans-serif !important;
+	font-family: "Zona Pro", Arial, sans-serif !important;
 	font-weight: $fw !important;
 }
 
@@ -198,40 +206,53 @@ a {
 	}
 }
 // modal styles
-.modal-request {
-	label {
-		font-size: 16px;
-		font-weight: 500;
+#modalRequest {
+	min-height: 350px !important;
+	@media (min-width: 768px) {
+		min-height: 500px !important;
 	}
-	.requestCallButton {
-		color: #000;
-		font-size: 16px;
-		font-weight: 700;
-		padding: 5px 12px;
+}
+.modal-request__container {
+	@media (max-width: 768px) {
+		min-width: 300px !important;
+	}
+	* {
 		border-radius: 10px;
-		background: #f9c000;
-		transition: all 0.3s ease 0s;
-		&:hover {
-			transition: all 0.3s ease 0s;
-			opacity: 0.8;
-		}
-		&:active {
-			transition: all 0.3s ease 0s;
-			opacity: 1;
-			transform: scale(0.9);
+		font-weight: 500;
+		font-size: 24px !important;
+		@media (max-width: 768px) {
+			font-size: 16px !important;
 		}
 	}
-	.close {
-		cursor: pointer;
+}
+.requestCallButton {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 12px;
+	border-radius: 10px;
+	background: #f9c000;
+	transition: all 0.3s ease 0s;
+	&:hover {
 		transition: all 0.3s ease 0s;
-		&:hover {
-			transition: all 0.3s ease 0s;
-			opacity: 0.8;
-		}
-		&:active {
-			transition: all 0.3s ease 0s;
-			opacity: 1;
-			transform: scale(0.9);
-		}
+		opacity: 0.8;
+	}
+	&:active {
+		transition: all 0.3s ease 0s;
+		opacity: 1;
+		transform: scale(0.9);
+	}
+}
+.close {
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		transition: all 0.3s ease 0s;
+		opacity: 0.8;
+	}
+	&:active {
+		transition: all 0.3s ease 0s;
+		opacity: 1;
+		transform: scale(0.9);
 	}
 }
