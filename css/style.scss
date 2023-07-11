@@ -25,6 +25,9 @@ html {
 		padding: 0;
 	}
 }
+.list-styled > * {
+	list-style-type: disc !important;
+}
 a {
 	text-decoration: none !important;
 	transition: all 0.3s ease 0s;
@@ -200,8 +203,7 @@ a {
 	transition: all 0.3s ease 0s;
 	@media (min-width: 768px) {
 		font-size: 35px;
-		width: 526px;
-		height: 101px;
+		padding: 30px 100px;
 	}
 	&:hover {
 		transition: all 0.3s ease 0s;

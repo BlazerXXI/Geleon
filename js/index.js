@@ -29,9 +29,11 @@ $(document).ready(function () {
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
 	});
 	// modal close with click submit button
-	$("#requestCallButtonModal").click(function () { 
+	$("#requestCallButtonModal").click(function () {
 		$("#modalRequest").addClass("d-none").removeClass("d-flex");
 		$("#modalBackground").addClass("d-none").removeClass("d-flex");
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
-	 })
+	});
+
+	console.log("ОТЗЫВЫ НАШИХ КЛИЕНТОВ".toLowerCase());
 });
