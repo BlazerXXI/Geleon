@@ -1,10 +1,16 @@
 $(document).ready(function () {
 	$("#headerMenu").click(function () {
-		$(this).toggleClass("menu-active");
+		$("#headerMenu").toggleClass("menu-active");
 
-		if ($(this).hasClass("menu-active")) {
+		if ($("#headerMenu").hasClass("menu-active")) {
 			$(".menu__body").css("display", "flex");
 		} else {
+			$(".menu__body").css("display", "none");
+		}
+	});
+	$(".main").click(function () {
+		if ($("#headerMenu").hasClass("menu-active")) {
+			$("#headerMenu").removeClass("menu-active");
 			$(".menu__body").css("display", "none");
 		}
 	});

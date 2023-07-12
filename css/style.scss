@@ -54,7 +54,10 @@ a {
 	}
 }
 .mt-128 {
-	margin-top: 128px !important;
+	margin-top: 22px !important;
+	@media (min-width: 768px) {
+		margin-top: 128px !important;
+	}
 }
 .fs-md-70 {
 	font-family: "Zona Pro", sans-serif;
@@ -303,6 +306,33 @@ a {
 	@media (max-width: 768px) {
 		img {
 			width: 75%;
+		}
+	}
+}
+// quality-of-materials
+.quality-of-materials__list {
+	margin-bottom: 2rem !important;
+	padding: 0 !important;
+	@media (min-width: 768px) {
+		padding-bottom: 117px !important;
+		margin-bottom: 170px !important;
+	}
+	@media (max-width: 768px) {
+		h4 {
+			font-size: 16px !important;
+		}
+		img {
+			width: 75px !important;
+			height: 75px !important;
+		}
+	}
+}
+// write-to-us
+.write-to-us {
+	@media (min-width: 768px) {
+		height: 915px;
+		._container {
+			height: inherit;
 		}
 	}
 }
