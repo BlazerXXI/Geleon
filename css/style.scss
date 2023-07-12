@@ -10,7 +10,7 @@ $gray: #f0f0f0;
 }
 
 @mixin zona($fz, $fw) {
-	font-family: "Zona Pro", Arial, sans-serif !important;
+	font-family: "Zona Pro" sans-serif !important;
 	font-weight: $fw !important;
 }
 
@@ -50,6 +50,28 @@ a {
 				width: 132px;
 				height: 108px;
 			}
+		}
+	}
+}
+.mt-128 {
+	margin-top: 128px !important;
+}
+.fs-md-70 {
+	font-family: "Zona Pro", sans-serif;
+	font-size: 22px;
+	@media (min-width: 768px) {
+		font-size: 70px !important;
+	}
+}
+.blue-text {
+	color: #050038 !important;
+}
+.bg-f-cons {
+	background-color: #2b2f2f;
+	* {
+		color: #ffffff !important;
+		button {
+			color: #000 !important;
 		}
 	}
 }

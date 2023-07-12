@@ -34,6 +34,4 @@ $(document).ready(function () {
 		$("#modalBackground").addClass("d-none").removeClass("d-flex");
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
 	});
-
-	console.log("ОТЗЫВЫ НАШИХ КЛИЕНТОВ".toLowerCase());
 });
