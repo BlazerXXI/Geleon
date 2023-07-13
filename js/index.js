@@ -40,4 +40,40 @@ $(document).ready(function () {
 		$("#modalBackground").addClass("d-none").removeClass("d-flex");
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
 	});
+
+	// animation quality-of-materials__list
+
+	$(window).scroll(function() {
+		const classes = [
+			".hero__container",
+			".partners ul",
+			".quality-of-materials__list",
+			".write-to-us__form-container",
+			".select-materials ul",
+			".scheme-of-work__container ul",
+			".feedback img",
+			".guarantee ul",
+			".free-consultation__container div",
+			".consumables img"
+		];
+	
+		const windowTop = $(window).scrollTop();
+		const windowBottom = windowTop + $(window).height();
+		
+		const elements = $(classes.join(','));
+		
+		elements.each(function() {
+			const elementTop = $(this).offset().top;
+			const elementBottom = elementTop + $(this).height();
+			
+			if (elementBottom >= windowTop && elementTop <= windowBottom) {
+				if (!$(this).hasClass("animated")) {
+					$(this).addClass("animated");
+					
+					$(this).css("opacity", "0").animate({ opacity: 1 }, 3000);
+				}
+			}
+		});
+	});
+	
 });

@@ -273,9 +273,11 @@
 					</ul>
 				</div>
 			</section>
-			<section class="write-to-us">
-				<div class="write-to-us__container _container">
-					<div class="">
+			<section class="write-to-us mh-915">
+				<div class="write-to-us__container _container position-relative">
+					<div
+						class="position-absolute start-0 top-0 z-1 d-md-block d-none w-100"
+					>
 						<img
 							src="./images/write-to-us/write-to-us-bg-1.png"
 							width="951"
@@ -284,46 +286,54 @@
 						/>
 					</div>
 					<div
-						class="w-50 m-auto mt-auto mb-auto h-100 d-flex flex-column justify-content-center"
+						class="mh-915 w-md-50 w-100 d-flex flex-column justify-content-center m-auto z-2 position-relative"
 					>
-						<h3>Напишите нам!</h3>
-						<p>
-							Квалифицированный менеджер нашей компании свяжется с вами и решит
-							любой вопрос по оснащению шиномонтажа.
-						</p>
-						<form action="./">
-							<label for="qualityOfMaterialsName"> Ваше имя </label>
-							<input
-								type="text"
-								class="form-control"
-								id="qualityOfMaterialsName"
-								value=""
-								min="{5"
-								}
-								max=""
-								step=""
-								required="required"
-							/>
-							<label for="qualityOfMaterialsNumber"> Телефон </label>
-							<input
-								type="number"
-								name=""
-								id="qualityOfMaterialsNumber"
-								class="form-control"
-								value=""
-								min="{5"
-								}
-								max=""
-								step=""
-								required="required"
-								title=""
-							/>
-							<button type="submit" class="primary-button py-4 px-5">
-								Напишите нам
-							</button>
-						</form>
+						<div
+							class="write-to-us__form-container d-flex flex-column gap-5 ms-md-5 ps-md-5"
+						>
+							<div class="d-flex flex-column gap-4">
+								<h3>Напишите нам!</h3>
+								<p class="fw-normal fs-5">
+									Квалифицированный менеджер нашей компании свяжется с вами и
+									решит любой вопрос по оснащению шиномонтажа.
+								</p>
+							</div>
+							<form id="writeToUs" class="d-flex flex-column gap-4">
+								<div>
+									<label for="qualityOfMaterialsName"> Ваше имя </label>
+									<input
+										type="text"
+										class="form-control"
+										id="qualityOfMaterialsName"
+										name="name"
+										value=""
+										title="Ваше имя"
+										required="required"
+										autocomplete="name"
+									/>
+								</div>
+								<div>
+									<label for="qualityOfMaterialsNumber"> Телефон </label>
+									<input
+										type="tel"
+										name="phone"
+										id="qualityOfMaterialsNumber"
+										class="form-control"
+										value=""
+										required="required"
+										title="Ваш номер телефона"
+										autocomplete="tel"
+									/>
+								</div>
+								<button type="submit" class="primary-button py-4 px-5">
+									Напишите нам
+								</button>
+							</form>
+						</div>
 					</div>
-					<div class="">
+					<div
+						class="position-absolute top-50 start-50 translate-middle-y ms-md-4 ps-md-3 d-md-block d-none"
+					>
 						<img
 							src="./images/write-to-us/write-to-us-bg-2.png"
 							width="665px"
@@ -335,8 +345,10 @@
 			</section>
 			<section class="select-materials">
 				<div class="select-materials__container _container">
-					<h2>Выберите материалы для шиномонтажа</h2>
-					<ul>
+					<h2 class="w-50 text-uppercase">
+						Выберите <span class="fw-bold">материалы</span> для шиномонтажа
+					</h2>
+					<ul class="mt-md-5 d-flex flex-column">
 						<li>
 							<div>
 								<img
