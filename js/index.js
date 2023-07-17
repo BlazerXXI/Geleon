@@ -41,3 +41,4 @@ $(document).ready(function () {
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
 	});
 });
+
