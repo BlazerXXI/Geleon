@@ -406,17 +406,21 @@ a {
 		font-weight: 700;
 	}
 }
+// title class
+.title-sections {
+	color: #050038 !important;
+	font-family: "Zona Pro", sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	@media (min-width: 768px) {
+		font-size: 70px;
+	}
+}
 // select-materials
 .select-materials {
 	margin-top: 35px;
 	@media (min-width: 900px) {
 		margin-left: 100px;
-	}
-	h2 {
-		color: #050038 !important;
-		font-family: "Zona Pro", sans-serif;
-		font-size: 22px;
-		font-weight: 400;
 	}
 	h3 {
 		font-family: "Zona Pro", sans-serif;
@@ -435,9 +439,9 @@ a {
 			}
 			transition: all 0.3s ease 0s;
 			&:hover {
-				box-shadow: 3px 3px 3px #00000040;
+				box-shadow: 3px 3px 5px 3px #00000040;
 				z-index: 1;
-				transform: scale(1.05) rotate(3deg);
+				transform: scale(1.05);
 				transition: all 0.3s ease 0s;
 			}
 		}
@@ -453,9 +457,6 @@ a {
 	}
 	@media (min-width: 768px) {
 		margin-top: 178px;
-		h2 {
-			font-size: 70px;
-		}
 	}
 	.list-styled {
 		padding-left: 12px + 7px !important;
@@ -481,12 +482,69 @@ a {
 		}
 	}
 }
-
+//  scheme-of-work
+.scheme-of-work {
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+		> li {
+			display: flex;
+			flex-direction: column;
+			gap: 23px;
+			justify-content: center;
+			align-items: center;
+			padding: 25px 40px 35px 39px;
+			border: 1px solid #000;
+			background: #fff;
+			box-shadow: 26px 23px 38px 11px rgba(0, 0, 0, 0.25);
+			transition: all 0.3s ease 0s;
+			&:hover {
+				opacity: 0.8;
+				transform: scale(1.02);
+				transition: all 0.3s ease 0s;
+			}
+		}
+	}
+}
 // feedback
 .feedback {
+	button {
+		img {
+			transition: all 0.3s ease 0s;
+			&:hover {
+				transform: scale(0.9);
+				opacity: 0.7;
+				transition: all 0.3s ease 0s;
+			}
+			&:active {
+				transform: scale(0.8);
+				opacity: 0.9;
+				transition: all 0.3s ease 0s;
+			}
+		}
+	}
 	img {
 		width: 100%;
 		height: 100%;
+	}
+	.carousel-item {
+		transition: transform 0.5s ease 0s;
+		img {
+			margin: 0px auto;
+			width: 213px !important;
+			height: 215px !important;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				filter: brightness(60%);
+				cursor: pointer;
+				transition: all 0.3s ease 0s;
+			}
+			&:active {
+				filter: none;
+				transition: all 0.3s ease 0s;
+			}
+		}
 	}
 }
 
