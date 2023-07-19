@@ -40,5 +40,20 @@ $(document).ready(function () {
 		$("#modalBackground").addClass("d-none").removeClass("d-flex");
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
 	});
-});
 
+	$(".scheme-of-work li").mouseenter(function () {
+		$(this).addClass("hovered");
+	});
+
+	$(".scheme-of-work li").mouseleave(function () {
+		$(this).removeClass("hovered");
+	});
+
+	$(".guarantee li").mouseenter(function () {
+		$(this).addClass("hovered");
+	});
+
+	$(".guarantee li").mouseleave(function () {
+		$(this).removeClass("hovered");
+	});
+});

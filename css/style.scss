@@ -500,7 +500,6 @@ a {
 			box-shadow: 26px 23px 38px 11px rgba(0, 0, 0, 0.25);
 			transition: all 0.3s ease 0s;
 			&:hover {
-				opacity: 0.8;
 				transform: scale(1.02);
 				transition: all 0.3s ease 0s;
 			}
@@ -543,6 +542,62 @@ a {
 			&:active {
 				filter: none;
 				transition: all 0.3s ease 0s;
+			}
+		}
+	}
+}
+
+// guarantee
+.guarantee {
+	ul {
+		li {
+			text-align: center;
+			font-weight: 500;
+			border: 1px solid #000;
+			display: flex;
+			width: 320px;
+			padding: 23px 10px 57px 10px;
+			flex-direction: column;
+			align-items: center;
+			gap: 23px;
+
+			background: #fff;
+			box-shadow: 26px 23px 38px 11px rgba(0, 0, 0, 0.25);
+
+			transition: all 0.3s ease 0s;
+			&:hover {
+				transition: all 0.3s ease 0s;
+				transform: translateY(-5px);
+				transform: scale(1.02);
+			}
+			img {
+				transition: all 0.3s ease 0s;
+			}
+		}
+	}
+}
+.hovered {
+	img {
+		transition: all 0.3s ease 0s;
+		transform: translateY(-10px);
+		animation-name: jumpImage;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		@keyframes jumpImage {
+			from {
+				transform: none;
+			}
+			25% {
+				transform: translateY(-4%) rotate(-4deg);
+			}
+			50% {
+				transform: translateY(+4%) rotate(4deg);
+			}
+			75% {
+				transform: translateY(-4%) rotate(-4deg);
+			}
+			to {
+				transform: none;
 			}
 		}
 	}
