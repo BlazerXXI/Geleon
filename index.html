@@ -53,7 +53,7 @@
 				<a href="" class="text-center">Гарантии</a>
 			</nav>
 			<div class="fw-semibold number-block">
-				<a href="tel:0991112233">+38(099) 111 22 33</a>
+				<a href="tel:+380996811324"> +38(099) 681-13-24 </a>
 			</div>
 			<div class="header__menu end-0 menu d-block d-lg-none">
 				<button type="button" id="headerMenu" class="menu__icon icon__menu">
@@ -298,7 +298,10 @@
 									решит любой вопрос по оснащению шиномонтажа.
 								</p>
 							</div>
-							<form id="writeToUs" class="d-flex flex-column gap-4">
+							<form
+								id="writeToUs"
+								class="d-flex flex-column gap-4 form-primary-style"
+							>
 								<div>
 									<label for="qualityOfMaterialsName"> Ваше имя </label>
 									<input
@@ -678,15 +681,18 @@
 						<span class="fw-bold">Бесплатная</span> консультация
 					</h2>
 					<div class="bg-f-cons mt-3 free-consultation__text-block">
-						<h3 class="text-uppercase h3__block-title">
+						<h3 class="text-uppercase h3__block-title mb-0">
 							Получите бесплатную консультацию по подбору расходных материалов
 						</h3>
-						<p class="p__block-text">
+						<p class="p__block-text mt-4 mb-0">
 							Мы свяжемся с Вами, чтобы уточнить детали. В зависимости от
 							индивидуальных пожеланий мы предложим несколько вариантов
 							расходников и проконсультируем Вам по их применению.
 						</p>
-						<form class="d-flex flex-column gap-3" action="./">
+						<form
+							class="d-flex flex-column gap-3 mt-3 pt-3 form-primary-style"
+							action="./"
+						>
 							<div class="d-flex flex-column gap-2">
 								<label for="firstNameInput">Ваше имя</label>
 								<input
@@ -705,10 +711,10 @@
 									class="w-100 border-1 form-control"
 								/>
 							</div>
-							<div>
+							<div class="text-center mt-2">
 								<button
 									type="submit"
-									class="mt-3 requestCallButton py-4 px-5"
+									class="mt-4 requestCallButton py-4 px-5"
 									id="requestCallButtonModal"
 								>
 									Заказать звонок
@@ -720,8 +726,14 @@
 			</section>
 			<section class="consumables">
 				<div class="consumables__container _container">
-					<h2>Расходные материалы для шиномонтажа у нас</h2>
-					<a href="#">
+					<h2 class="title-sections text-uppercase">
+						Расходные материалы <span class="fw-bold">для шиномонтажа</span> у
+						нас
+					</h2>
+					<a
+						class="mt-4 d-block"
+						href="https://www.google.com/maps/place/%D0%93%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD/@48.4240093,35.0026257,15.63z/data=!4m10!1m2!2m1!1sgeleon!3m6!1s0x40dbe4a743786761:0x206eef8cecc72dab!8m2!3d48.4245672!4d35.0025703!15sCgZnZWxlb25aCCIGZ2VsZW9ukgEVY2FyX2FjY2Vzc29yaWVzX3N0b3Jl4AEA!16s%2Fg%2F11b745v277?entry=ttu"
+					>
 						<img
 							src="./images/consumables/map.jpg"
 							width="1619px"
@@ -732,32 +744,44 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer container mt-2 pt-1">
 			<div class="footer__container _container">
 				<div>
-					<img
-						src="./images/footer/logo.svg"
-						alt="logo"
-						width="205"
-						height="168px"
-					/>
+					<a href="./">
+						<img
+							src="./images/footer/logo.svg"
+							alt="logo"
+							width="205"
+							height="168px"
+						/>
+					</a>
 				</div>
-				<div>
-					<a href="#"> Преимущества </a><a href="#"> Товары </a
-					><a href="#"> Позвоните нам </a>
-				</div>
-				<div>
-					<a href="#">Схема работы</a><a href="#">Отзывы</a
-					><a href="#">Гарантии</a>
-				</div>
-				<div>
-					<h3>Контакти:</h3>
-					<a href="#">
+				<nav>
+					<div class="d-flex flex-column gap-3">
+						<a href="#"> Преимущества </a><a href="#"> Товары </a
+						><a href="#"> Позвоните нам </a>
+					</div>
+					<div class="d-flex flex-column gap-3 mt-2 pt-1">
+						<a href="#">Схема работы</a>
+						<a href="#">Отзывы</a>
+						<a href="#">Гарантии</a>
+					</div>
+				</nav>
+				<div class="d-flex flex-column gap-2">
+					<h3 class="fw-bold fs-6">Контакти:</h3>
+					<a
+						href="https://www.google.com/maps/place/%D0%93%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD/@48.4240093,35.0026257,15.63z/data=!4m10!1m2!2m1!1sgeleon!3m6!1s0x40dbe4a743786761:0x206eef8cecc72dab!8m2!3d48.4245672!4d35.0025703!15sCgZnZWxlb25aCCIGZ2VsZW9ukgEVY2FyX2FjY2Vzc29yaWVzX3N0b3Jl4AEA!16s%2Fg%2F11b745v277?entry=ttu"
+					>
 						г. Днепр <br />
 						ул. Строителей, 23
 					</a>
 					<a href="tel:+380996811324"> +38(099) 681-13-24 </a>
-					<a href="mailto:GELEON.KL@GMAIL.COM"> GELEON.KL@GMAIL.COM </a>
+					<a
+						class="text-decoration-underline"
+						href="mailto:GELEON.KL@GMAIL.COM"
+					>
+						GELEON.KL@GMAIL.COM
+					</a>
 				</div>
 			</div>
 		</footer>
