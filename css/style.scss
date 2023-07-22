@@ -393,17 +393,26 @@ a {
 		}
 	}
 }
+.p__block-text {
+	@media (min-width: 768px) {
+		font-size: 20px;
+	}
+	font-size: 16px;
+}
+body .h3__block-title {
+	color: #facc15 !important;
+	font-family: "Zona Pro", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	@media (min-width: 768px) {
+		font-size: 37px;
+	}
+}
 .write-to-us__form-container {
 	background: #2b2f2f;
 	padding: 30px 27px 24px 16px;
 	@media (min-width: 768px) {
 		padding: 100px 64px 100px 100px;
-	}
-	h3 {
-		color: #facc15 !important;
-		font-family: "Zona Pro", sans-serif;
-		font-size: 37px;
-		font-weight: 700;
 	}
 }
 // title class
@@ -588,18 +597,26 @@ a {
 				transform: none;
 			}
 			25% {
-				transform: translateY(-4%) rotate(-4deg);
+				transform: translateY(-8%) rotate(-16deg);
 			}
 			50% {
-				transform: translateY(+4%) rotate(4deg);
+				transform: translateY(+8%) rotate(16deg);
 			}
 			75% {
-				transform: translateY(-4%) rotate(-4deg);
+				transform: translateY(-8%) rotate(-16deg);
 			}
 			to {
 				transform: none;
 			}
 		}
+	}
+}
+
+// free-consultation
+.free-consultation {
+	margin: 123px 0px 0px 0px;
+	.free-consultation__text-block {
+		padding: 35px 15px 41px 27px;
 	}
 }
 
