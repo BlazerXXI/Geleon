@@ -524,9 +524,6 @@ body .h3__block-title {
 			align-items: center;
 			justify-content: center;
 			gap: 43px !important;
-			> * {
-				flex: 0 1 auto;
-			}
 		}
 		li {
 			text-align: center;
@@ -696,9 +693,6 @@ body .h3__block-title {
 			padding-top: 28px !important;
 			align-items: center;
 			justify-content: center;
-			> * {
-				flex: 0 1 auto;
-			}
 		}
 		li {
 			text-align: center;
@@ -718,7 +712,7 @@ body .h3__block-title {
 			@media (min-width: 768px) {
 				padding: 59px 95px 54px 94px;
 				gap: 21px;
-				min-width: 488px;
+				max-width: 488px;
 			}
 			&:hover {
 				transition: all 0.3s ease 0s;
