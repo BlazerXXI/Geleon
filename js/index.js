@@ -41,6 +41,7 @@ $(document).ready(function () {
 		$("#modalContainer").addClass("d-none").removeClass("d-flex");
 	});
 
+	// animation sections
 	$(".scheme-of-work li").mouseenter(function () {
 		$(this).addClass("hovered");
 	});
@@ -57,6 +58,7 @@ $(document).ready(function () {
 		$(this).removeClass("hovered");
 	});
 
+	// slider
 	let slideIndex = 1;
 	showSlides(slideIndex);
 
@@ -91,4 +93,26 @@ $(document).ready(function () {
 	$(".previous").click(function () {
 		previousSlide();
 	});
+
+	let touchStartX = 0;
+	let touchEndX = 0;
+
+	$(".slider-primary").on("touchstart", function (event) {
+		touchStartX = event.originalEvent.touches[0].clientX;
+	});
+
+	$(".slider-primary").on("touchend", function (event) {
+		touchEndX = event.originalEvent.changedTouches[0].clientX;
+		handleSwipe();
+	});
+
+	function handleSwipe() {
+		const minSwipeDistance = 50;
+
+		if (touchEndX < touchStartX - minSwipeDistance) {
+			nextSlide();
+		} else if (touchEndX > touchStartX + minSwipeDistance) {
+			previousSlide();
+		}
+	}
 });
