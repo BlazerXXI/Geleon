@@ -170,6 +170,9 @@ a {
 .hero__container {
 	max-width: 1617px;
 	margin: 0px auto;
+	h1 {
+		font-size: 22px;
+	}
 	@media (min-width: 768px) {
 		h1 {
 			font-size: 70px;
@@ -291,8 +294,8 @@ a {
 }
 // modal styles
 .modal-request__container {
-	min-height: 500px !important;
-	min-width: 450px !important;
+	min-height: 600px !important;
+	min-width: 650px !important;
 	@media (max-width: 768px) {
 		min-width: 300px !important;
 		min-height: 350px !important;
